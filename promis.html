@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let waadaa1 = new Promise(function (resolve, reject) {
+        //     setTimeout(() => {
+        //         console.log('setimout1 started');
+        //     }, 2000)
+        //     resolve(true);
+
+        // });
+        // let output = waadaa1.then(() => {
+        //     let wadda2 = new Promise(function (resolve, reject) {
+        //         setTimeout(() => {
+        //             console.log('setimeout2 started');
+        //         }, 3000);
+        //         resolve("waada3 resloved");
+        //     })
+        //     return wadda2;
+        // })
+
+
+
+        // output.then((value) => console.log(value));
+
+//  async function myDisplay() {
+//   let myPromise = new Promise(function(resolve, reject) {
+//     resolve("I love You !!");
+//   });
+//   document.getElementById("demo").innerHTML = await myPromise;
+// }
+
+// myDisplay();
+function greet(name, callback) {
+    console.log("Hello " + name);
+    callback();   // Baad me call hoga
+}
+
+function sayBye() {
+    console.log("Goodbye!");
+}
+
+greet("Aman", sayBye);
+
+    </script>
+
+</body>
+
+</html>
